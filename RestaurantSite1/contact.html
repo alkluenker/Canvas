@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<!--
+
+Name: Angela Kluenker
+Date Created: 2-19-20
+Most Recent Revision:
+
+-->
+
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Trey's Sandwich Shop</h1>
+        <i style="color: black; font-size: 30px;" class="fa fa-circle-thin"></i>
+        <i style="color: gray" class="fa fa-circle-o"></i>
+        <i style="color: blue;" class="fa fa-circle-o"></i>
+
+    </header>
+    <hr />
+
+    <nav>
+
+
+        <p><a href="index.html">Home</a></p>
+
+        <p><a href="menu.html">Menu</a></p>
+
+        <p><a href="contact.html">Contact Us</a></p>
+
+    </nav>
+    <hr />
+
+        <form action="submit.html" method="POST">
+
+            <label for="firstName">Name:</label>
+            <input type="text" id="Name" name="Name"> <br /><br />
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email"> <br /><br />
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone"> <br /><br />
+
+
+            <label for="contact">Reason for Inquiry:</label>
+            <select id="contact" name="contact">
+            <option value="default" selected>Catering</option>
+            <option value="private party">Private Party</option>
+            <option value="feedback">Feedback</option>
+            <option value="other">Other</option>
+            </select><br /><br />
+
+            <label for="info">Additional Information</label>
+            <textarea id="info" name="info"></textarea> <br /><br />
+            
+            
+            Have you been to the restaurant?
+            <input type="radio" id="choice1" name="questionnaire" value="no" checked>
+            <label for="choice1">No</label>
+            <input type="radio" id="choice2" name="questionnaire" value="yes">
+            <label for="choice2">Yes</label><br /><br />
+            
+
+            <fieldset>
+                <legend>Best days to contact you</legend><br />
+                <input type="checkbox" id="monday" name="day" value="monday">
+                <label for="monday">M</label><br />
+
+                <input type="checkbox" id="tuesday" name="day" value="tuesday">
+                <label for="tuesday">T</label><br />
+
+                <input type="checkbox" id="wednesday" name="day" value="wednesday">
+                <label for="wednesday">W</label><br />
+
+                <input type="checkbox" id="thursday" name="day" value="thursday">
+                <label for="monday">Th</label><br />
+
+                <input type="checkbox" id="friday" name="day" value="friday">
+                <label for="friday">F</label><br />
+                
+            </fieldset>
+
+
+
+
+            <input type="submit" name="submit" value="Send Request">
+
+                
+
+
+        </form>
+
+
+
+        <footer>
+
+        </footer>
+    </body> 
+</html
