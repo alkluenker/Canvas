@@ -16,7 +16,7 @@ Most Recent Revision:
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <title>Home</title>
+  <title>Contact Us</title>
 
   <!-- Boostrap Stylesheet -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -59,9 +59,9 @@ Most Recent Revision:
             <div class="col-sm-8">
 
 
-                <script type="text/javascript">
+                <!--<script type="text/javascript">
                     document.write("Hi, JavaScript is enabled!");
-                  </script>
+                  </script>-->
                   <noscript>
                     <div style="border: 1px solid purple; padding: 10px">
                       <span style="color:red">JavaScript is not enabled! This site is best viewed when Javascript is enabled</span>
@@ -91,7 +91,7 @@ Most Recent Revision:
           <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <ul class="nav nav-pills">
                 <li class="nav-item">
-                    <a class="nav-link active" href="index.html" ><ion-icon name="home-outline"></ion-icon></a>
+                    <a class="nav-link" href="index.html" ><ion-icon name="home-outline"></ion-icon></a>
 
 
                 </li>
@@ -99,7 +99,7 @@ Most Recent Revision:
                   <a class="nav-link" href="menu.html">Menu</a>
                 </li>
               <li class="nav-item"></li>
-                <a class="nav-link" href="contact.html">Contact Us</a>
+                <a class="nav-link active" href="contact.html">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -111,7 +111,7 @@ Most Recent Revision:
     
     <hr />
 
-    <div class="container">
+    <!--<div class="container">
 
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -152,7 +152,7 @@ Most Recent Revision:
             </a>
         </div>
 
-    </div>
+    </div>-->
 
 
 
@@ -166,20 +166,40 @@ Most Recent Revision:
                 </div>
 
                 
+
+                
+            </div>
+
+            <div class="row errors text-center" id="nameerror">
+
+                <p>Name is Required</p>
+
             </div>
 
             <div class="form-group row justify-content-center">
                 <label for="email" class="col-sm-3 col-form-label text-right">Email: </label>
                 <div class="col-sm-5">
-                    <input type="email" class="form-control" id="email">
+                    <input type="email" class="form-control" name="email" id="email">
                 </div>
+            </div>
+
+            <div class="row errors text-center" id="emailerror">
+
+                <p>Email is Required</p>
+
             </div>
 
             <div class="form-group row justify-content-center">
                 <label for="phone" class="col-sm-3 col-form-label text-right">Phone: </label>
                 <div class="col-sm-5">
-                    <input type="phone" class="form-control" id="phone">
+                    <input type="phone" class="form-control" name="phone" id="phone">
                 </div>
+            </div>
+
+            <div class="row errors text-center" id="phoneerror">
+
+                <p>Phone Number is Required</p>
+
             </div>
 
             <div class="form-group row justify-content-center">
@@ -196,9 +216,15 @@ Most Recent Revision:
                 <label for="info" class="col-sm-3 col-form-label text-right">Additional Information: </label>
                 <div class="col-sm-5">
 
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <textarea class="form-control" name="info" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
               </div>
+
+              <div class="row errors text-center" id="infoerror">
+
+                <p>Additional Information is Required</p>
+
+            </div>
 
 
 
@@ -244,24 +270,39 @@ Most Recent Revision:
 
             <div class="col-sm-5">
 
-                <label class="checkbox-inline mr-2"><input type="checkbox" value="">M</label>
-                <label class="checkbox-inline mr-2"><input type="checkbox" value="">T</label>
-                <label class="checkbox-inline mr-2"><input type="checkbox" value="">W</label>
-                <label class="checkbox-inline mr-2"><input type="checkbox" value="">Th</label>
-                <label class="checkbox-inline mr-2"><input type="checkbox" value="">F</label>
+                <label class="checkbox-inline mr-2"><input type="checkbox" name="options[]" value="">M</label>
+                <label class="checkbox-inline mr-2"><input type="checkbox" name="options[]" value="">T</label>
+                <label class="checkbox-inline mr-2"><input type="checkbox" name="options[]" value="">W</label>
+                <label class="checkbox-inline mr-2"><input type="checkbox" name="options[]" value="">Th</label>
+                <label class="checkbox-inline mr-2"><input type="checkbox" name="options[]" value="">F</label>
 
  
                 
                 </div>
             </div>
 
+            <div class="row errors text-center" id="dayserror">
+
+                <p>This is Required</p>
+
+            </div>
+
             
             <div class="form-group row justify-content-center">
                 <div class="col-sm-2">
-                  <button onclick="validateForm2()" type="submit" value="submit" class="btn btn-primary">Send Request</button>
+                  <!--<button onclick="return validateForm2()" type="submit" value="submit" -->
+
+                  <button onclick="return validateForm2()" type="button"  
+                  class="btn btn-primary">Send Request</button>
 
                   <!--<input type="submit" value="Submit">-->
                 </div>
+            </div>
+
+            <div class="row" id="validinfo">
+
+                <p>All information is valid. Thank you.</p>
+
             </div>
             
         </form>
