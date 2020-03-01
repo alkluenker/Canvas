@@ -80,7 +80,7 @@ Most Recent Revision:
 
 
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
         <div class="container">
           
           
@@ -93,7 +93,9 @@ Most Recent Revision:
           <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <ul class="nav nav-pills">
                 <li class="nav-item">
-                    <a class="nav-link active" href="index.html" ><ion-icon name="home-outline"></ion-icon></a>
+                    <!--<a class="nav-link active" href="index.html" ><ion-icon name="home-outline"></ion-icon></a>-->
+
+                    <a class="nav-link active" href="index.html" >Home<ion-icon name="home"></ion-icon></a>
 
 
                 </li>
@@ -110,7 +112,52 @@ Most Recent Revision:
        
     </nav>
 
-<body>
+
+    <div class="container slideshow mb-5">
+
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="images/GrandOpening.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+              <h5>New Location!</h5>
+              <p class="carouselp">We're opening a new location in Green Bay</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img src="images/SeasonalMenu.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+              <h5>We're rolling out our seasonal menu</h5>
+              <p class="carouselp">Special options for this season</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img src="images/Drink.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+              <h5>Drink of the month</h5>
+              <p class="carouselp">SG special brew</p>
+              </div>
+          </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+          </a>
+      </div>
+
+  </div>
+
+
+
 
     <div class="container">
 
@@ -118,15 +165,15 @@ Most Recent Revision:
 
             <div class="col-sm-6">
 
-                <img src="images/RestaurantPicture.jpg" alt="My Picture">
+                <img id="sandwichpicture" src="images/SandwichPicture.jpg" alt="My Picture">
 
             </div>
 
             <div class="col-sm-6">
 
                 <h4>Restaurant Description</h4>
-                <p>Cupidatat amet exercitation est ad non reprehenderit quis duis eu laborum cupidatat do. Magna sint cupidatat ut duis consequat elit ad et adipisicing qui ipsum qui ullamco. <strong>Et elit aliquip et elit</strong> consequat nisi amet nulla culpa excepteur in. Velit in ullamco voluptate eu eu sint ad do officia qui sit mollit enim dolore. Nisi eu do dolore veniam excepteur cupidatat cillum est excepteur voluptate voluptate minim excepteur.</p>
-                <p>Est incididunt consequat est consequat eu exercitation dolore. Id dolore ad aliquip quis nisi. Enim veniam est labore eu tempor id qui ullamco enim sunt consectetur mollit ex. Qui ipsum sint labore est qui eiusmod enim exercitation in. Exercitation duis Lorem tempor in officia deserunt deserunt dolor ex ad incididunt laborum aliquip ut.</p>
+                <p>Trey's Sandwich Shop is a casaul style     restaurant created by Trey Miller. He is a world renowned chef known for his creativity and style. A former mechanic, he found his calling as a gourmet chef in 2011. Since then he has been creating new recipes and bringing them to you.</p>
+                <p>Come enjoy this unique experience. Trey loves his customers and when he's not creating awesome sandwiches, he loves talking to them. Set in the beautiful town of Waukesha, Trey's Sandwich Shop is like no other restaurant you have ever been to. Don't miss out!</p>
 
             </div>
 
@@ -137,28 +184,14 @@ Most Recent Revision:
     </div>
 
     
-    <footer class="footer mt-5">
-        <div class="two-toned-footer-color">
+    <footer class="footer mt-5 py-4">
+      <div class="two-toned-footer-color"></div>
+      <p class="text-muted text-muted-footer text-center">
+          3947 W. Moreland St. Waukesha, WI 54938 <br />
 
-            <div class="row justify-content-center">
-
-                <div>
-
-                    <p>3947 W. Moreland St. Waukesha, WI 54938</p>
-        
-                    <p>(262) 873-0928</p>
-
-                </div>
-
-            </div>
-
-            
-
-        </div>
-        <p class="text-muted text-muted-footer text-center">
-          &copy; Copyright
-        </p>
-      </footer>
+          (262) 873-0928
+      </p>
+    </footer>
 
 
     

@@ -11,7 +11,7 @@ function hideError() {
 
 function showError() {
     document.getElementById("error").style.display = "inline";
-    var errorMessage = "Error: Starting bet needs to be greater than 0"
+    var errorMessage = "Error: Starting bet needs to be an integer greater than 0"
     var errorText = document.getElementById("error");
     errorText.innerText = errorMessage
 }
@@ -36,7 +36,7 @@ function play() {
     //var for all the bets to be stored
     var betsArray = [];
 
-    if ((startingBet == 0) || (startingBet <0)) {
+    if ((startingBet == 0) || (startingBet <0) || (startingBet % 1 !== 0)) {
         showError();
         hideResults();
     }
@@ -73,23 +73,28 @@ function play() {
 
     }
 
-    var numberOfRolls = betsArray.length;
     var findMax = Math.max.apply(Math, betsArray);
     var findIndexOfMax = betsArray.indexOf(findMax) + 1;
+    var numberOfRolls = betsArray.length;
     
 
     
 
     function showResults() {
-        document.getElementById("results").style.display = "inline";
         document.getElementById("playButton").innerHTML = "Play Again";
+        document.getElementById("results").style.display = "inline";
         document.getElementById("resultsstartingbet").innerHTML = "$" + startingBet +".00";
         document.getElementById("resultstotalrolls").innerHTML = numberOfRolls;
         document.getElementById("resultshighest").innerHTML = "$" +     findMax + ".00";
         document.getElementById("resultsrollhighest").innerHTML = findIndexOfMax;
-        };
-    
+    };
+
+    if ((startingBet > 0) && (startingBet % 1 ==0)) {
+
         showResults();
+
+    }
+    
 
 }
 

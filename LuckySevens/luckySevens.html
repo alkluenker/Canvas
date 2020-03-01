@@ -29,9 +29,9 @@
 
     <div class="jumbotron">
         <h1 class="display-4 text-center">Lucky Sevens</h1>
-        <!--<p class="lead">Place your starting bet</p>
-        <hr class="my-4">
-        <p>Play until you run out of money</p>-->
+        <p class="lead text-center">How much money do you have to bet?</p>
+        <!--<hr class="my-4">
+        <p>Starting bet must be an integer greater than 0</p>-->
         
     </div>
 
@@ -39,20 +39,33 @@
 
         <div class="container">
 
-            <div class="row text-justify:center">
+            <div class="row justify-content-center">
 
                 <div class="col-md-6">
                     
-                    <div class="form-group row">
-                        <label for="startingbet" class="col-sm-4 col-form-label">Starting Bet:</label>
-                        <div class="col-sm-8">
+                    <div class="form-group row justify-content-center">
+                        <label for="startingbet" class="col-sm-4 text-right col-form-label">Starting Bet:</label>
+                        <div class="col-sm-4">
                         <input type="text" class="form-control" id="startingbet">
                         </div>
 
-                    <!--<span>Starting Bet:<input type="number" name="Starting Bet" id="startingbet" placeholder="$0.00"></span>-->
+                        <!--<span>Starting Bet:<input type="number" name="Starting Bet" id="startingbet" placeholder="$0.00"></span>-->
+
+                    </div>
                     <br/>
 
+                    
+            <div class="row justify-content-center">
+
+                <div class="col-md-2">
+
                     <button onclick="play()" id="playButton" type="button" class="btn btn-primary">Play</button>
+
+                </div>
+
+
+            </div>
+
 
                 <!-- <button onclick="play()" id="playButton">Play</button>-->
                 </form>
@@ -70,7 +83,7 @@
             <div id="results">
 
                 <table width="90%">
-                    <caption id="resultscaption">Results</caption>
+                    <caption class="text-center" id="resultscaption">Results</caption>
 
 
                     <table class="table table-bordered">

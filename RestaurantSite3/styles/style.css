@@ -3,3 +3,26 @@
     color: red;
 
 }
+
+#sandwichpicture {
+    width: 80%;
+}
+
+footer {
+    background-color: rgb(224, 238, 238);
+    color: black;
+}
+
+.slideshow {
+    width: 50%;
+    height: 100%;
+}
+
+h5 {
+    font-size: 50px;
+    
+}
+
+.carouselp {
+    font-size: 30px;
+}

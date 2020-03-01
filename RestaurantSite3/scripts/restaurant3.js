@@ -113,6 +113,8 @@ function validateChecks() {
 
     document.getElementById("validinfo").style.display = "inline";
 
+    document.getElementById("dayserror").style.display = "none";
+
   }
   
 }
