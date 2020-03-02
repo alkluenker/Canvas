@@ -6,11 +6,7 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.errors {
 
-    color: red;
-
-}
 
 #sandwichpicture {
     width: 80%;
@@ -32,21 +28,13 @@ h5 {
     font-size: 30px;
 }
 
-@media only screen and (min-width: 640px){
+@media only screen and (min-width: 768px){
     .slideshow {
         width: 50%;
     }
 }
 
-#validinfo {
-    color: green;
-    font-size: 30px;
 
-}
-
-.formtext {
-    font-weight: bold;
-}
 
 
 
