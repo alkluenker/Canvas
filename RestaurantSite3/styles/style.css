@@ -1,3 +1,11 @@
+body {
+    background-color: azure;
+}
+
+.restname {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 .errors {
 
     color: red;
@@ -28,4 +36,41 @@ h5 {
     .slideshow {
         width: 50%;
     }
+}
+
+#validinfo {
+    color: green;
+    font-size: 30px;
+
+}
+
+.formtext {
+    font-weight: bold;
+}
+
+
+a {
+    font-family: 'Times New Roman', Times, serif;
+    
+    
+}
+  
+
+  
+a:visited {
+    color: gray;
+    
+}
+  
+a:hover {
+    
+    
+    font-family: cursive;
+    font-weight: bold;
+}
+  
+a:active {
+    font-family: monospace;
+    text-decoration: none;
+    
 }
