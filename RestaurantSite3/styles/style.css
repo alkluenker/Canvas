@@ -20,17 +20,27 @@ footer {
 
 
 h5 {
-    font-size: 50px;
+    font-size: 40px;
     
 }
 
 .carouselp {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 @media only screen and (min-width: 768px){
     .slideshow {
         width: 50%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    h5 {
+        font-size: 30px;
+    }
+
+    .carouselp {
+        font-size: 15px;
     }
 }
 
